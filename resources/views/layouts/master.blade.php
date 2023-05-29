@@ -12,11 +12,11 @@
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/starter-template.css" rel="stylesheet">
 </head>
-<body>
+<body background="https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/63ad8c86128681.5d909dad4fd8a.jpg">
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
-            <a class="navbar-brand" href="{{ route('index') }}">Лучший Магазин</a>
+            <a class="navbar-brand" style="color:rgb(7, 206, 251)" href="{{ route('index') }}">Лучший Магазин</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">

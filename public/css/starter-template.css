@@ -1,5 +1,8 @@
 body {
     padding-top: 40px;
+    
+        background-size: 100%;
+    
 }
 
 .starter-template {
@@ -29,7 +32,7 @@ div.labels span.badge {
 
 span.badge.badge-success {
     color: #fff;
-    background-color: #28a745;
+    background-color: #04c4e2;
 }
 
 span.badge.badge-warning {
@@ -39,9 +42,10 @@ span.badge.badge-warning {
 
 span.badge.badge-danger {
     color: #212529;
-    background-color: #ffc107;
+    background-color: #e1ff02;
 }
 
 div.filters {
     padding-bottom: 5px;
 }
+

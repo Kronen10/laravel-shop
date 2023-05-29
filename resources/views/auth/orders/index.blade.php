@@ -23,9 +23,13 @@
                 <th>
                     Сумма
                 </th>
+                @auth
+                @admin
                 <th>
                     Действия
                 </th>
+                @endadmin
+                @endauth
             </tr>
             @foreach($orders as $order)
                 <tr>
@@ -36,13 +40,18 @@
                     <td>{{ $order->calculateFullSum() }} руб.</td>
                     <td>
                         <div class="btn-group" role="group">
-                            <a class="btn btn-success" type="button"
+                    @auth
+                    @admin 
+                        <a class="btn btn-success" type="button"
                                @admin
                                href="{{ route('orders.show', $order) }}"
                                @else
                                href="{{ route('person.orders.show', $order) }}"
                                 @endadmin
                             >Открыть</a>
+                @endadmin
+                @endauth
+                             
                         </div>
                     </td>
                 </tr>
